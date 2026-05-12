@@ -1,0 +1,179 @@
+<!-- File: algodesk.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlgoDesk — ひとり情シスを、ひとりにしない。</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Algorithm<span>.</span></a>
+      <nav class="nav">
+        <a href="algodesk.html">Product</a>
+        <a href="company.html">Company</a>
+        <a href="members.html">Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html" class="nav__cta">Contact →</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <section class="section">
+      <div class="container" style="text-align: center;">
+        <p class="text-mono section-label" style="justify-content: center;">Product / AlgoDesk</p>
+        <h1 class="section__heading fade-in" style="font-size: clamp(2.5rem, 7vw, 5rem);">
+          ひとり情シスを、<br>
+          <span class="text-gradient">ひとりにしない。</span>
+        </h1>
+        <p class="section__lead fade-in" style="margin-left: auto; margin-right: auto;">
+          Slack/Teamsに常駐し、社員の問い合わせに3秒で回答するAIヘルプデスク。
+        </p>
+        <div class="hero__cta fade-in" style="justify-content: center; margin-top: var(--space-md);">
+          <a href="contact.html" class="btn btn--primary">14日間無料で試す →</a>
+          <a href="#pricing" class="btn btn--ghost">料金を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="text-mono section-label">Pain Points</p>
+        <h2 class="section__heading fade-in">こんなお悩み、<br>ありませんか？</h2>
+        <div class="grid grid--2 fade-in" style="margin-top: var(--space-lg);">
+          <div class="card">
+            <h3 class="card__title">📡 「Wi-Fi繋がらない」と1日5回聞かれる</h3>
+            <p class="card__text">同じ質問への対応で、本来の業務が進まない。</p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">🔐 退職者のアカウント、全部止めた？</h3>
+            <p class="card__text">セキュリティリスクの温床。チェック漏れが怖い。</p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">📊 SaaSの棚卸、半年やっていない</h3>
+            <p class="card__text">使われていないライセンスが、毎月コストを生んでいる。</p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">🌙 夜中のメールに、心が削られる</h3>
+            <p class="card__text">休日も気が休まらない。バーンアウト寸前。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--color-bg-alt);">
+      <div class="container">
+        <p class="text-mono section-label">How It Works</p>
+        <h2 class="section__heading fade-in">3ステップで、解決。</h2>
+        <div class="grid grid--3 fade-in" style="margin-top: var(--space-lg);">
+          <div class="card">
+            <p class="text-mono" style="color: var(--color-accent-cyan);">STEP 01</p>
+            <h3 class="card__title" style="margin-top: var(--space-xs);">接続</h3>
+            <p class="card__text">Slack / Notion / Google Driveを連携。30分で導入完了。</p>
+          </div>
+          <div class="card">
+            <p class="text-mono" style="color: var(--color-accent-cyan);">STEP 02</p>
+            <h3 class="card__title" style="margin-top: var(--space-xs);">学習</h3>
+            <p class="card__text">自社ナレッジをAIが自動で読み込み・構造化。</p>
+          </div>
+          <div class="card">
+            <p class="text-mono" style="color: var(--color-accent-cyan);">STEP 03</p>
+            <h3 class="card__title" style="margin-top: var(--space-xs);">自動応答</h3>
+            <p class="card__text">社員からの質問に、出典付きで3秒以内に回答。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <p class="text-mono section-label">Pricing</p>
+        <h2 class="section__heading fade-in">料金プラン</h2>
+        <p class="section__lead fade-in">
+          会社規模に合わせて、3つのプランから選べます。
+        </p>
+
+        <div class="pricing-grid fade-in">
+          <div class="pricing-card">
+            <h3 class="pricing-card__name">ライト</h3>
+            <p class="pricing-card__price">¥9,800<span>/月</span></p>
+            <p class="pricing-card__target">〜30名規模</p>
+            <ul class="pricing-card__features">
+              <li>Slack または Teams 連携</li>
+              <li>月間質問数 500件</li>
+              <li>ナレッジソース 1つ</li>
+              <li>簡易月次レポート</li>
+              <li>メールサポート</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost" style="width: 100%; justify-content: center;">問い合わせる</a>
+          </div>
+
+          <div class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">人気 No.1</span>
+            <h3 class="pricing-card__name">スタンダード</h3>
+            <p class="pricing-card__price">¥29,800<span>/月</span></p>
+            <p class="pricing-card__target">〜100名規模</p>
+            <ul class="pricing-card__features">
+              <li>Slack ＋ Teams 両方連携</li>
+              <li>月間質問数 3,000件</li>
+              <li>ナレッジソース 3つ</li>
+              <li>メール・Webチャット対応</li>
+              <li>画像認識Q&A</li>
+              <li>入社・退職オンボーディング</li>
+              <li>SSO対応</li>
+              <li>チャットサポート</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary" style="width: 100%; justify-content: center;">問い合わせる</a>
+          </div>
+
+          <div class="pricing-card">
+            <h3 class="pricing-card__name">プロ</h3>
+            <p class="pricing-card__price">¥49,800<span>/月</span></p>
+            <p class="pricing-card__target">〜300名規模</p>
+            <ul class="pricing-card__features">
+              <li>全機能搭載</li>
+              <li>月間質問数 無制限</li>
+              <li>ナレッジソース 無制限</li>
+              <li>多言語対応（5言語）</li>
+              <li>SaaS棚卸ダッシュボード</li>
+              <li>権限ベース検索</li>
+              <li>国内データ保管</li>
+              <li>専任カスタマーサクセス</li>
+              <li>SLA 99.9%保証</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost" style="width: 100%; justify-content: center;">問い合わせる</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(0, 229, 255, 0.05));">
+      <div class="container" style="text-align: center;">
+        <h2 class="section__heading fade-in">14日間、無料で試せます。</h2>
+        <p class="section__lead fade-in" style="margin-left: auto; margin-right: auto;">
+          クレジットカード不要。30分の設定で、すぐ動きます。
+        </p>
+        <a href="contact.html" class="btn btn--primary fade-in">無料トライアルを開始 →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <p>© 2026 AlgorithM Inc. All rights reserved.</p>
+        <p class="status-indicator">All Systems Operational</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
