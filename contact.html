@@ -1,0 +1,100 @@
+<!-- File: contact.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — 株式会社AlgorithM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Algorithm<span>.</span></a>
+      <nav class="nav">
+        <a href="algodesk.html">Product</a>
+        <a href="company.html">Company</a>
+        <a href="members.html">Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html" class="nav__cta">Contact →</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <section class="section">
+      <div class="container">
+        <p class="text-mono section-label">Contact</p>
+        <h1 class="section__heading fade-in">
+          Let's <span class="text-gradient">Talk.</span>
+        </h1>
+        <p class="section__lead fade-in">
+          3営業日以内に、必ず返信します。
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form class="form fade-in" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form__group">
+            <label class="form__label" for="name">お名前 *</label>
+            <input class="form__input" type="text" id="name" name="name" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="company">会社名</label>
+            <input class="form__input" type="text" id="company" name="company">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">メールアドレス *</label>
+            <input class="form__input" type="email" id="email" name="email" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="type">お問い合わせ種別 *</label>
+            <select class="form__select" id="type" name="type" required>
+              <option value="">選択してください</option>
+              <option value="product">製品について（AlgoDesk）</option>
+              <option value="partner">パートナー提携について</option>
+              <option value="press">取材・メディア掲載依頼</option>
+              <option value="careers">採用について</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="size">従業員数</label>
+            <select class="form__select" id="size" name="size">
+              <option value="">選択してください</option>
+              <option value="1-30">1〜30名</option>
+              <option value="31-100">31〜100名</option>
+              <option value="101-300">101〜300名</option>
+              <option value="301+">301名以上</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="message">メッセージ *</label>
+            <textarea class="form__textarea" id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">
+            送信する →
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <p>© 2026 AlgorithM Inc. All rights reserved.</p>
+        <p class="status-indicator">All Systems Operational</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
