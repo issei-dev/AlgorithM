@@ -844,3 +844,330 @@ h1, h2, h3, h4 {
     gap: var(--space-sm);
   }
 }
+
+/* File: assets/css/style.css （末尾に追記） */
+
+/* ============================================
+   Letter Section
+============================================ */
+.letter {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.letter p {
+  margin-bottom: var(--space-sm);
+}
+
+.letter__signature {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--color-text-dim);
+}
+
+/* ============================================
+   Photo Gallery
+============================================ */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 120px;
+  gap: var(--space-sm);
+}
+
+.gallery__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all 0.4s var(--transition);
+}
+
+.gallery__item:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent-cyan);
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(20%);
+  transition: all 0.6s var(--transition);
+}
+
+.gallery__item:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Bento Grid レイアウト */
+.gallery__item--lg {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+
+.gallery__item--md {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+.gallery__item--sm {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.gallery__item--wide {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-sm);
+  background: linear-gradient(to top, rgba(10, 14, 26, 0.95), transparent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+  opacity: 0;
+  transition: opacity 0.4s var(--transition);
+}
+
+.gallery__item:hover .gallery__caption {
+  opacity: 1;
+}
+
+/* 画像未設定時のプレースホルダー */
+.gallery__placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-accent-violet), var(--color-accent-cyan));
+  opacity: 0.3;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}
+
+/* ============================================
+   Voice Cards
+============================================ */
+.voice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.voice {
+  padding: var(--space-md);
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+.voice::before {
+  content: """;
+  position: absolute;
+  top: -20px;
+  left: var(--space-sm);
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: var(--color-accent-cyan);
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.voice__text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.voice__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.voice__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent-violet), var(--color-accent-cyan));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  filter: grayscale(60%);
+  overflow: hidden;
+}
+
+.voice__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.voice__name {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.voice__role {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ============================================
+   Values Grid (採用基準)
+============================================ */
+.values-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.value-row {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: start;
+}
+
+.value-row:last-child {
+  border-bottom: none;
+}
+
+.value-row__number {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-accent-cyan);
+  letter-spacing: 0.1em;
+}
+
+.value-row__title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.value-row__text {
+  color: var(--color-text-dim);
+  font-size: 0.95rem;
+}
+
+/* ============================================
+   Meetup CTA Box
+============================================ */
+.meetup-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(0, 229, 255, 0.05));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.meetup-box__icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-sm);
+}
+
+.meetup-box h3 {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-sm);
+}
+
+.meetup-box__text {
+  color: var(--color-text-dim);
+  margin-bottom: var(--space-md);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.meetup-box__features {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-md);
+}
+
+.meetup-box__feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+.meetup-box__feature::before {
+  content: "✓";
+  color: var(--color-accent-green);
+  font-weight: 700;
+}
+
+/* ============================================
+   Responsive
+============================================ */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 140px;
+  }
+
+  .gallery__item--lg,
+  .gallery__item--md,
+  .gallery__item--wide,
+  .gallery__item--sm {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .voice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
+  }
+
+  .meetup-box {
+    padding: var(--space-md);
+  }
+
+  .meetup-box__features {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+  }
+}
