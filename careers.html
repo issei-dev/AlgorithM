@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Careers — 株式会社AlgorithM</title>
+  <meta name="description" content="株式会社AlgorithMでは、情熱を共有できる仲間を探しています。まずはカジュアルにお話ししませんか。">
+  <link rel="icon" href="assets/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -13,7 +15,10 @@
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="logo">Algorithm<span>.</span></a>
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.svg" alt="AlgorithM" class="logo__img"
+             onerror="this.onerror=null; this.src='assets/images/logo.png';">
+      </a>
       <nav class="nav">
         <a href="algodesk.html">Product</a>
         <a href="company.html">Company</a>
@@ -26,123 +31,350 @@
   </header>
 
   <main style="padding-top: 120px;">
+
+    <!-- ============================================
+         01. Hero
+    ============================================ -->
     <section class="section">
       <div class="container">
         <p class="text-mono section-label">Careers</p>
         <h1 class="section__heading fade-in">
-          Build the algorithm.<br>
-          <span class="text-gradient">Build yourself.</span>
+          条件ではなく、<br>
+          <span class="text-gradient">情熱で繋がる仲間を。</span>
         </h1>
         <p class="section__lead fade-in">
-          3人目の仲間を、本気で探しています。
+          いま私たちが探しているのは、スキルセットではありません。<br>
+          「ひとりを、ひとりにしない」という想いに、共鳴してくれる人です。
         </p>
       </div>
     </section>
 
+    <!-- ============================================
+         02. Letter from Founder
+    ============================================ -->
     <section class="section">
       <div class="container">
-        <p class="text-mono section-label">Culture</p>
-        <h2 class="section__heading fade-in">私たちのカルチャー</h2>
-        <div class="grid grid--3 fade-in" style="margin-top: var(--space-lg);">
-          <div class="card">
-            <h3 class="card__title">Ship Fast, Learn Faster</h3>
-            <p class="card__text">完璧より、まず出す。出してから学ぶ。</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Code is Communication</h3>
-            <p class="card__text">コードは、未来の自分とチームへの手紙。</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Disagree, then Commit</h3>
-            <p class="card__text">遠慮なく議論し、決まったら全力で実行する。</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Stay Curious</h3>
-            <p class="card__text">業務時間の20%は、好きな技術探究に使ってよい。</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Be a Good Human</h3>
-            <p class="card__text">技術より先に、誠実であること。</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Remote-First, Always</h3>
-            <p class="card__text">場所に縛られず、成果で評価する。</p>
-          </div>
+        <p class="text-mono section-label">A Letter</p>
+        <h2 class="section__heading fade-in">代表からの手紙</h2>
+
+        <div class="letter fade-in" style="margin-top: var(--space-lg);">
+          <p>
+            はじめまして。株式会社AlgorithMの代表をしている、◯◯です。
+          </p>
+          <p>
+            このページを開いてくれて、ありがとうございます。
+            正直に書きます。私たちはまだ、3人の小さな会社です。
+            派手なオフィスも、整った福利厚生も、これからつくっていく段階です。
+          </p>
+          <p>
+            それでも、私たちには確かな“熱”があります。
+            「ひとり情シス」という、誰にも気づかれずに疲弊している人たちを、
+            AIの力で救いたい。その一点に、3人全員が本気で向き合っています。
+          </p>
+          <p>
+            だから、求人票に書ける「年収◯万円」「経験◯年以上」みたいな条件は、
+            このページにはあえて書いていません。
+            そういう数字より先に、まずは話してみたいんです。
+          </p>
+          <p>
+            あなたが、いま何に怒っているか。何にワクワクしているか。
+            なぜAIに興味があるのか。どんな世界をつくりたいのか。
+          </p>
+          <p>
+            それが私たちの方向と少しでも重なるなら、
+            きっと一緒にできることがある。
+            そう信じて、このページを書いています。
+          </p>
+          <p>
+            まずはコーヒーでも飲みながら、お話ししませんか。
+          </p>
+
+          <p class="letter__signature">
+            ― 株式会社AlgorithM 代表 ◯◯ ◯◯
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- ============================================
+         03. Gallery — 社内の様子
+    ============================================ -->
     <section class="section" style="background: var(--color-bg-alt);">
       <div class="container">
-        <p class="text-mono section-label">Benefits</p>
-        <h2 class="section__heading fade-in">働き方</h2>
-        <div class="grid grid--4 fade-in" style="margin-top: var(--space-lg);">
-          <div>
-            <div class="stat__number"><span data-target="100" data-suffix="%">0%</span></div>
-            <p class="stat__label">Full Remote</p>
+        <p class="text-mono section-label">Inside AlgorithM</p>
+        <h2 class="section__heading fade-in">私たちの、日常。</h2>
+        <p class="section__lead fade-in">
+          リモートで働きながら、月に数回集まる。<br>
+          そんな私たちの飾らない日常を、少しだけ覗いてみてください。
+        </p>
+
+        <div class="gallery fade-in" style="margin-top: var(--space-lg);">
+
+          <!-- 大きめ：メイン写真（例: チーム集合写真） -->
+          <div class="gallery__item gallery__item--lg">
+            <img src="assets/images/gallery/photo-01.jpg"
+                 alt="チームの集合写真"
+                 onerror="this.parentElement.innerHTML='<div class=\'gallery__placeholder\'>PHOTO 01 / TEAM</div>';">
+            <div class="gallery__caption">月1のオフサイトミーティング</div>
           </div>
-          <div>
-            <div class="stat__number">¥3万</div>
-            <p class="stat__label">月額学習補助</p>
+
+          <!-- 中：作業風景 -->
+          <div class="gallery__item gallery__item--md">
+            <img src="assets/images/gallery/photo-02.jpg"
+                 alt="作業風景"
+                 onerror="this.parentElement.innerHTML='<div class=\'gallery__placeholder\'>PHOTO 02 / WORK</div>';">
+            <div class="gallery__caption">真剣に議論する瞬間</div>
           </div>
-          <div>
-            <div class="stat__number"><span data-target="20">0</span></div>
-            <p class="stat__label">年間有給日数</p>
+
+          <!-- 小×2 -->
+          <div class="gallery__item gallery__item--sm">
+            <img src="assets/images/gallery/photo-03.jpg"
+                 alt="ホワイトボードでブレスト"
+                 onerror="this.parentElement.innerHTML='<div class=\'gallery__placeholder\'>PHOTO 03</div>';">
+            <div class="gallery__caption">ブレインストーミング</div>
           </div>
-          <div>
-            <div class="stat__number">無制限</div>
-            <p class="stat__label">AIツール利用</p>
+
+          <div class="gallery__item gallery__item--sm">
+            <img src="assets/images/gallery/photo-04.jpg"
+                 alt="コーヒーブレイク"
+                 onerror="this.parentElement.innerHTML='<div class=\'gallery__placeholder\'>PHOTO 04</div>';">
+            <div class="gallery__caption">コーヒーブレイク</div>
           </div>
+
+          <!-- 横長 -->
+          <div class="gallery__item gallery__item--wide">
+            <img src="assets/images/gallery/photo-05.jpg"
+                 alt="プロダクト開発の様子"
+                 onerror="this.parentElement.innerHTML='<div class=\'gallery__placeholder\'>PHOTO 05 / DEV</div>';">
+            <div class="gallery__caption">AlgoDeskの開発風景</div>
+          </div>
+
+          <!-- 中 -->
+          <div class="gallery__item gallery__item--md">
+            <img src="assets/images/gallery/photo-06.jpg"
+                 alt="ランチミーティング"
+                 onerror="this.parentElement.innerHTML='<div class=\'gallery__placeholder\'>PHOTO 06 / LUNCH</div>';">
+            <div class="gallery__caption">ランチミーティング</div>
+          </div>
+
+          <!-- 小×2 -->
+          <div class="gallery__item gallery__item--sm">
+            <img src="assets/images/gallery/photo-07.jpg"
+                 alt="技術書を読む"
+                 onerror="this.parentElement.innerHTML='<div class=\'gallery__placeholder\'>PHOTO 07</div>';">
+            <div class="gallery__caption">読書タイム</div>
+          </div>
+
+          <div class="gallery__item gallery__item--sm">
+            <img src="assets/images/gallery/photo-08.jpg"
+                 alt="夜の振り返り"
+                 onerror="this.parentElement.innerHTML='<div class=\'gallery__placeholder\'>PHOTO 08</div>';">
+            <div class="gallery__caption">夜の振り返り会</div>
+          </div>
+
         </div>
+
+        <p style="text-align: center; margin-top: var(--space-md); color: var(--color-text-dim); font-size: 0.9rem;">
+          ※ 写真は順次追加しています。
+        </p>
       </div>
     </section>
 
+    <!-- ============================================
+         04. Voice — メンバーの声
+    ============================================ -->
     <section class="section">
       <div class="container">
-        <p class="text-mono section-label">Open Positions</p>
-        <h2 class="section__heading fade-in">募集ポジション</h2>
-
-        <div class="job fade-in" style="margin-top: var(--space-md);">
-          <div>
-            <p class="job__status">募集中</p>
-            <h3 class="job__title">Software Engineer (Full-stack)</h3>
-            <p class="job__meta">フルリモート / 業務委託 or 正社員 / ¥600万〜¥1,200万</p>
-          </div>
-          <span class="job__arrow">→</span>
-        </div>
-
-        <div class="job fade-in">
-          <div>
-            <p class="job__status">募集中</p>
-            <h3 class="job__title">Customer Success Lead</h3>
-            <p class="job__meta">フルリモート / 正社員 / ¥500万〜¥900万</p>
-          </div>
-          <span class="job__arrow">→</span>
-        </div>
-
-        <div class="job fade-in">
-          <div>
-            <p class="job__status" style="color: var(--color-text-dim);">
-              <span style="background: var(--color-text-dim); box-shadow: none;"></span>
-              オープン採用
-            </p>
-            <h3 class="job__title">Any Role</h3>
-            <p class="job__meta">あなたの強みを聞かせてください。</p>
-          </div>
-          <span class="job__arrow">→</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(0, 229, 255, 0.05));">
-      <div class="container" style="text-align: center;">
-        <h2 class="section__heading fade-in">まずは、話してみませんか。</h2>
-        <p class="section__lead fade-in" style="margin-left: auto; margin-right: auto;">
-          カジュアル面談から始められます。30分、お気軽に。
+        <p class="text-mono section-label">Voices</p>
+        <h2 class="section__heading fade-in">メンバーの声</h2>
+        <p class="section__lead fade-in">
+          私たちが、なぜここで働いているのか。
         </p>
-        <a href="contact.html" class="btn btn--primary fade-in">カジュアル面談を申し込む →</a>
+
+        <div class="voice-grid fade-in" style="margin-top: var(--space-lg);">
+
+          <div class="voice">
+            <p class="voice__text">
+              大企業では絶対にできない、
+              「自分の手で世界を変えている」感覚があります。
+              失敗もすぐ自分に返ってくるけど、それも含めて楽しい。
+            </p>
+            <div class="voice__author">
+              <div class="voice__avatar">
+                <img src="assets/images/members/member-02.jpg" alt=""
+                     onerror="this.parentElement.innerHTML='B';">
+              </div>
+              <div>
+                <p class="voice__name">◯◯ ◯◯</p>
+                <p class="voice__role">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="voice">
+            <p class="voice__text">
+              「数字」と「気持ち」、両方を扱える環境はなかなかありません。
+              お客様の喜びの声を直接聞きながら、戦略を考えられる。
+              これは小さい会社の醍醐味だと思っています。
+            </p>
+            <div class="voice__author">
+              <div class="voice__avatar">
+                <img src="assets/images/members/member-03.jpg" alt=""
+                     onerror="this.parentElement.innerHTML='C';">
+              </div>
+              <div>
+                <p class="voice__name">◯◯ ◯◯</p>
+                <p class="voice__role">Customer Success</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="voice">
+            <p class="voice__text">
+              ひとり情シスの方から「夜眠れるようになりました」と
+              言ってもらえた日、本気で泣きそうになりました。
+              この感覚を、一緒に味わえる人が欲しいです。
+            </p>
+            <div class="voice__author">
+              <div class="voice__avatar">
+                <img src="assets/images/members/member-01.jpg" alt=""
+                     onerror="this.parentElement.innerHTML='A';">
+              </div>
+              <div>
+                <p class="voice__name">◯◯ ◯◯</p>
+                <p class="voice__role">Founder & CEO</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
+
+    <!-- ============================================
+         05. What We Look For — 求める人物像
+    ============================================ -->
+    <section class="section" style="background: var(--color-bg-alt);">
+      <div class="container">
+        <p class="text-mono section-label">What We Look For</p>
+        <h2 class="section__heading fade-in">こんな人と、話したい。</h2>
+        <p class="section__lead fade-in">
+          スキルや経歴より、まずは“心の向き”を大切にしています。
+        </p>
+
+        <div class="values-list fade-in" style="margin-top: var(--space-lg);">
+
+          <div class="value-row">
+            <p class="value-row__number">01</p>
+            <div>
+              <h3 class="value-row__title">「誰かの孤独」に、心が動く人。</h3>
+              <p class="value-row__text">
+                目立たない人、声を上げない人。
+                そんな人たちのために手を動かせる人と働きたいです。
+              </p>
+            </div>
+          </div>
+
+          <div class="value-row">
+            <p class="value-row__number">02</p>
+            <div>
+              <h3 class="value-row__title">AIに、希望と責任を感じている人。</h3>
+              <p class="value-row__text">
+                AIをただのツールとしてではなく、
+                未来を変えるかもしれない技術として向き合える人。
+              </p>
+            </div>
+          </div>
+
+          <div class="value-row">
+            <p class="value-row__number">03</p>
+            <div>
+              <h3 class="value-row__title">わからないことを、面白がれる人。</h3>
+              <p class="value-row__text">
+                スタートアップは、わからないことだらけです。
+                それを「不安」より「楽しい」と感じられる人と。
+              </p>
+            </div>
+          </div>
+
+          <div class="value-row">
+            <p class="value-row__number">04</p>
+            <div>
+              <h3 class="value-row__title">小さく作って、すぐ出せる人。</h3>
+              <p class="value-row__text">
+                完璧主義よりも、まず動かす。出してから磨く。
+                そんなスピード感を共有できる人。
+              </p>
+            </div>
+          </div>
+
+          <div class="value-row">
+            <p class="value-row__number">05</p>
+            <div>
+              <h3 class="value-row__title">技術より先に、誠実であれる人。</h3>
+              <p class="value-row__text">
+                どんなに優秀でも、嘘をつかない。逃げない。誤魔化さない。
+                その一点だけは、譲れない価値観です。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         06. Casual Meetup
+    ============================================ -->
+    <section class="section">
+      <div class="container">
+        <p class="text-mono section-label">Casual Meetup</p>
+        <h2 class="section__heading fade-in" style="text-align: center;">
+          まずは、お茶でも飲みながら。
+        </h2>
+
+        <div class="meetup-box fade-in" style="margin-top: var(--space-lg);">
+          <div class="meetup-box__icon">☕</div>
+          <h3>30分のカジュアルミートアップ</h3>
+          <p class="meetup-box__text">
+            選考でも面接でもありません。<br>
+            私たちのこと、あなたのこと、お互いを知るための時間です。<br>
+            合わなければ、それで構いません。
+          </p>
+
+          <div class="meetup-box__features">
+            <span class="meetup-box__feature">履歴書・職務経歴書 不要</span>
+            <span class="meetup-box__feature">オンライン / 対面どちらでも</span>
+            <span class="meetup-box__feature">学生・他業種の方も歓迎</span>
+          </div>
+
+          <a href="contact.html" class="btn btn--primary">
+            ミートアップを申し込む →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         07. Final Message
+    ============================================ -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(0, 229, 255, 0.05));">
+      <div class="container" style="text-align: center; max-width: 720px;">
+        <h2 class="section__heading fade-in">
+          一緒にアルゴリズムを、<br>
+          <span class="text-gradient">奏でませんか。</span>
+        </h2>
+        <p class="section__lead fade-in" style="margin-left: auto; margin-right: auto;">
+          会社は、人でできています。
+          あなたが加わることで、私たちは少しだけ良くなれる。
+          そう信じています。
+        </p>
+        <a href="contact.html" class="btn btn--primary fade-in">
+          話してみる →
+        </a>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
