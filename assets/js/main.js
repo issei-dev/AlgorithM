@@ -159,3 +159,139 @@ if (canvas) {
 // ============================================
 console.log('%cHello, fellow developer.', 'font-size: 20px; color: #00E5FF; font-weight: bold;');
 console.log('%cWe are hiring. → /careers.html', 'font-size: 14px; color: #7C3AED;');
+// File: assets/js/main.js （末尾に追記）
+
+// ============================================
+// Lightbox Gallery
+// ============================================
+(() => {
+  const galleryItems = document.querySelectorAll('.gallery__item');
+  if (galleryItems.length === 0) return;
+
+  // ライトボックスHTMLを動的に生成
+  const lightboxHTML = `
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="lightbox__counter">
+        <span id="lightbox-current">1</span> / <span id="lightbox-total">1</span>
+      </div>
+      <button class="lightbox__close" id="lightbox-close" aria-label="閉じる">✕</button>
+      <button class="lightbox__prev" id="lightbox-prev" aria-label="前の画像">‹</button>
+      <button class="lightbox__next" id="lightbox-next" aria-label="次の画像">›</button>
+      <div class="lightbox__container">
+        <img class="lightbox__image" id="lightbox-image" src="" alt="">
+        <p class="lightbox__caption" id="lightbox-caption"></p>
+      </div>
+    </div>
+  `;
+  document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightbox-image');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxCurrent = document.getElementById('lightbox-current');
+  const lightboxTotal = document.getElementById('lightbox-total');
+  const closeBtn = document.getElementById('lightbox-close');
+  const prevBtn = document.getElementById('lightbox-prev');
+  const nextBtn = document.getElementById('lightbox-next');
+
+  // 画像情報を配列化（画像が存在するもののみ）
+  const images = [];
+  galleryItems.forEach((item) => {
+    const img = item.querySelector('img');
+    const caption = item.querySelector('.gallery__caption');
+    if (img && img.src && !img.src.includes('placeholder')) {
+      images.push({
+        src: img.src,
+        alt: img.alt || '',
+        caption: caption ? caption.textContent.trim() : ''
+      });
+    }
+  });
+
+  lightboxTotal.textContent = images.length;
+  let currentIndex = 0;
+
+  const openLightbox = (index) => {
+    if (images.length === 0) return;
+    currentIndex = index;
+    updateImage();
+    lightbox.classList.add('is-active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lightbox-open');
+  };
+
+  const closeLightbox = () => {
+    lightbox.classList.remove('is-active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lightbox-open');
+  };
+
+  const updateImage = () => {
+    const current = images[currentIndex];
+    lightboxImage.style.opacity = '0';
+    setTimeout(() => {
+      lightboxImage.src = current.src;
+      lightboxImage.alt = current.alt;
+      lightboxCaption.textContent = current.caption;
+      lightboxCurrent.textContent = currentIndex + 1;
+      lightboxImage.style.opacity = '1';
+    }, 200);
+  };
+
+  const showPrev = () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateImage();
+  };
+
+  const showNext = () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage();
+  };
+
+  // ギャラリー画像クリックでオープン
+  galleryItems.forEach((item, index) => {
+    const img = item.querySelector('img');
+    if (img && img.src && !img.src.includes('placeholder')) {
+      const imageIndex = images.findIndex(i => i.src === img.src);
+      if (imageIndex !== -1) {
+        item.style.cursor = 'zoom-in';
+        item.addEventListener('click', () => openLightbox(imageIndex));
+      }
+    }
+  });
+
+  // クローズ・ナビゲーション
+  closeBtn.addEventListener('click', closeLightbox);
+  prevBtn.addEventListener('click', showPrev);
+  nextBtn.addEventListener('click', showNext);
+
+  // 背景クリックでクローズ
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // キーボード操作
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('is-active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showPrev();
+    if (e.key === 'ArrowRight') showNext();
+  });
+
+  // スワイプ操作（モバイル）
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  lightbox.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  lightbox.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchEndX - touchStartX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) showPrev();
+      else showNext();
+    }
+  });
+})();
