@@ -1,0 +1,151 @@
+[
+  {
+    "id": "2026-05-19-algodesk-v1-2-release",
+    "title": "AlgoDesk v1.2 リリース：画像認識Q&A機能を追加しました",
+    "date": "2026-05-19",
+    "category": "product-update",
+    "tags": ["AlgoDesk", "アップデート", "AI機能"],
+    "author": "AlgorithM Team",
+    "thumbnail": "assets/images/blog/2026-05-19-thumb.jpg",
+    "excerpt": "Slack上でスクリーンショットを添付するだけで、AIがエラー画面を解析し解決方法を提案する新機能をリリースしました。",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "本日、AlgoDesk v1.2 をリリースしました。最大のアップデートは「画像認識Q&A機能」の追加です。"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "新機能の概要"
+      },
+      {
+        "type": "paragraph",
+        "text": "社員がSlackで質問する際、エラー画面のスクリーンショットを添付できるようになりました。AIが画像を解析し、エラー内容を理解した上で適切な解決方法を提案します。"
+      },
+      {
+        "type": "image-gallery",
+        "images": [
+          {
+            "src": "assets/images/blog/2026-05-19-01.jpg",
+            "caption": "Slackでスクショを添付して質問"
+          },
+          {
+            "src": "assets/images/blog/2026-05-19-02.jpg",
+            "caption": "AIが画像を解析し回答"
+          },
+          {
+            "src": "assets/images/blog/2026-05-19-03.jpg",
+            "caption": "解決手順をステップ表示"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "対応プラン"
+      },
+      {
+        "type": "paragraph",
+        "text": "本機能はスタンダードプラン以上でご利用いただけます。ライトプランのお客様は、スタンダードへのアップグレードでご利用可能です。"
+      }
+    ]
+  },
+  {
+    "id": "2026-05-15-member-interview-engineer",
+    "title": "メンバーインタビュー：エンジニア佐藤が語る、3人で創るプロダクト",
+    "date": "2026-05-15",
+    "category": "member",
+    "tags": ["社員紹介", "インタビュー", "エンジニアリング"],
+    "author": "広報担当",
+    "thumbnail": "assets/images/blog/2026-05-15-thumb.jpg",
+    "excerpt": "AlgorithMのコア開発を担うエンジニア・佐藤に、少人数チームでの開発スタイルや日々の働き方を聞きました。",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "AlgorithMの3人目のメンバー、エンジニアの佐藤にインタビューを行いました。"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/blog/2026-05-15-portrait.jpg",
+        "caption": "オフィスにて、佐藤エンジニア"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Q. AlgorithMに入社した決め手は？"
+      },
+      {
+        "type": "paragraph",
+        "text": "「少人数だからこそ、すべての意思決定に関われる環境に惹かれました。技術選定からプロダクト戦略まで、自分の意見がそのまま反映される速度感が魅力です。」"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Q. 普段の開発スタイルは？"
+      },
+      {
+        "type": "image-gallery",
+        "images": [
+          {
+            "src": "assets/images/blog/2026-05-15-desk.jpg",
+            "caption": "作業デスク周り"
+          },
+          {
+            "src": "assets/images/blog/2026-05-15-tools.jpg",
+            "caption": "愛用ツール"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "「AIアシスタントをフル活用しながら、設計の本質的な部分に時間を使うようにしています。」"
+      }
+    ]
+  },
+  {
+    "id": "2026-05-10-team-offsite",
+    "title": "社内イベント：箱根で全社オフサイトを開催しました",
+    "date": "2026-05-10",
+    "category": "event",
+    "tags": ["社内イベント", "オフサイト", "チームビルディング"],
+    "author": "AlgorithM Team",
+    "thumbnail": "assets/images/blog/2026-05-10-thumb.jpg",
+    "excerpt": "創業半年を記念して、メンバー3名で箱根オフサイトを開催。次の半年の戦略を語り合いました。",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "2026年5月初旬、創業から半年を迎えたタイミングで、箱根にてオフサイトを実施しました。"
+      },
+      {
+        "type": "image-gallery",
+        "images": [
+          {
+            "src": "assets/images/blog/2026-05-10-01.jpg",
+            "caption": "宿での戦略ディスカッション"
+          },
+          {
+            "src": "assets/images/blog/2026-05-10-02.jpg",
+            "caption": "ホワイトボードに描いた次期ロードマップ"
+          },
+          {
+            "src": "assets/images/blog/2026-05-10-03.jpg",
+            "caption": "夕食での乾杯"
+          },
+          {
+            "src": "assets/images/blog/2026-05-10-04.jpg",
+            "caption": "翌朝の散策"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "話し合ったテーマ"
+      },
+      {
+        "type": "paragraph",
+        "text": "次の半年で達成したいARR目標、プロダクトのロードマップ、そして4人目のメンバーをどう迎えるか。集中して議論を重ねた2日間でした。"
+      }
+    ]
+  }
+]
