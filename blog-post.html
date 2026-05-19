@@ -1,0 +1,84 @@
+<!-- File: blog-post.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - 株式会社AlgorithM</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="global-nav">
+      <a href="index.html" class="logo">AlgorithM</a>
+      <ul class="nav-menu">
+        <li><a href="algodesk.html">Product</a></li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="members.html">Team</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="blog-post-page">
+
+    <article class="post-article">
+
+      <header class="post-header container">
+        <div class="post-breadcrumb">
+          <a href="blog.html">← Blog一覧に戻る</a>
+        </div>
+        <div class="post-meta">
+          <span class="post-category" id="post-category"></span>
+          <time class="post-date" id="post-date"></time>
+        </div>
+        <h1 class="post-title" id="post-title"></h1>
+        <div class="post-tags" id="post-tags"></div>
+        <div class="post-author">
+          <span id="post-author"></span>
+        </div>
+      </header>
+
+      <div class="post-thumbnail" id="post-thumbnail"></div>
+
+      <div class="post-body container" id="post-body">
+        <!-- JSで動的生成 -->
+      </div>
+
+      <footer class="post-footer container">
+        <div class="post-share">
+          <span>SHARE</span>
+          <a href="#" id="share-x" target="_blank" rel="noopener">X</a>
+          <a href="#" id="share-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </footer>
+
+    </article>
+
+    <section class="related-posts">
+      <div class="container">
+        <h2 class="section-title">Related Posts</h2>
+        <div class="blog-grid" id="related-grid">
+          <!-- JSで動的生成 -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 AlgorithM Inc.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/blog-post.js"></script>
+</body>
+</html>
