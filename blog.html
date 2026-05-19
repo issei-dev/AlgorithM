@@ -1,0 +1,80 @@
+<!-- File: blog.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - 株式会社AlgorithM</title>
+  <meta name="description" content="AlgorithMの製品アップデート、メンバー紹介、社内イベントなどをお届けします。">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="global-nav">
+      <a href="index.html" class="logo">AlgorithM</a>
+      <ul class="nav-menu">
+        <li><a href="algodesk.html">Product</a></li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="members.html">Team</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="blog-page">
+
+    <section class="blog-hero">
+      <div class="container">
+        <p class="eyebrow">BLOG</p>
+        <h1 class="blog-hero-title">
+          Algorithm <span class="accent">Journal</span>
+        </h1>
+        <p class="blog-hero-sub">
+          プロダクトのアップデート、メンバーの素顔、社内の出来事を綴ります。
+        </p>
+      </div>
+    </section>
+
+    <section class="blog-filter">
+      <div class="container">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="product-update">Product Update</button>
+          <button class="filter-btn" data-filter="member">Member</button>
+          <button class="filter-btn" data-filter="event">Event</button>
+        </div>
+        <div class="tag-cloud" id="tag-cloud">
+          <!-- JSで動的生成 -->
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-list-section">
+      <div class="container">
+        <div class="blog-grid" id="blog-grid">
+          <!-- JSで動的生成 -->
+        </div>
+        <div class="empty-state" id="empty-state" style="display:none;">
+          <p>該当する記事がありません。</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 AlgorithM Inc.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/blog-list.js"></script>
+</body>
+</html>
