@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Members — 株式会社Algorithm..</title>
+  <link rel="icon" href="assets/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -12,32 +13,32 @@
 </head>
 <body>
   <header class="header">
-  <div class="container header__inner">
-    <a href="index.html" class="logo">
-      <img src="assets/images/logo.png"
-           alt="Algorithm.."
-           class="logo__img"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
-      <span class="logo__text" style="display: none;">Algorithm<span>..</span></span>
-    </a>
-    <nav class="nav">
-      <a href="algodesk.html">Product</a>
-      <a href="company.html">Company</a>
-      <a href="members.html">Team</a>
-      <a href="blog.html">Blog</a>
-      <a href="careers.html">Careers</a>
-      <a href="contact.html" class="nav__cta">Contact →</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Menu">☰</button>
-  </div>
-</header>
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png"
+             alt="Algorithm.."
+             class="logo__img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+        <span class="logo__text" style="display: none;">Algorithm<span>..</span></span>
+      </a>
+      <nav class="nav">
+        <a href="algodesk.html">Product</a>
+        <a href="company.html">Company</a>
+        <a href="members.html">Team</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html" class="nav__cta">Contact →</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
 
   <main style="padding-top: 120px;">
     <section class="section">
       <div class="container">
         <p class="text-mono section-label">The Team</p>
         <h1 class="section__heading fade-in">
-          3人で、<span class="text-gradient">100人分の仕事を。</span>
+          4人で、<span class="text-gradient">100人分の仕事を。</span>
         </h1>
         <p class="section__lead fade-in">
           役職ではなく、役割で動く。少人数だからこそ実現できる、軽やかなチーム。
@@ -47,26 +48,37 @@
 
     <section class="section">
       <div class="container">
+
+        <!-- ===== メンバー 01: 代表 ===== -->
         <div class="member fade-in">
-          <div class="member__photo">A</div>
+          <div class="member__photo">
+            <img src="assets/images/members/member-01.jpg"
+                 alt="藤宮 蓮"
+                 onerror="this.parentElement.classList.add('member__photo--placeholder'); this.parentElement.innerHTML='H';">
+          </div>
           <div>
-            <h2 class="member__name">◯◯ ◯◯</h2>
-            <p class="member__role">Founder & CEO / Chief Algorithm Officer</p>
+            <h2 class="member__name">藤宮 蓮</h2>
+            <p class="member__role">Founder & CEO / CTO</p>
             <p class="member__quote">「ひとりを、ひとりにしない。」</p>
             <p style="color: var(--color-text-dim);">
-              セキュリティ業界出身。プロダクト戦略・営業・採用を担当。
+              セキュリティ業界出身。経営戦略・プロダクト統括・技術アーキテクチャを担当。
               休日は柴犬と散歩、Lyriaで作曲。
             </p>
             <div style="margin-top: var(--space-sm); display: flex; gap: var(--space-sm); flex-wrap: wrap;">
               <span class="text-mono" style="padding: 4px 12px; background: var(--color-bg); border-radius: 100px;">AI Strategy</span>
               <span class="text-mono" style="padding: 4px 12px; background: var(--color-bg); border-radius: 100px;">Product</span>
-              <span class="text-mono" style="padding: 4px 12px; background: var(--color-bg); border-radius: 100px;">Sales</span>
+              <span class="text-mono" style="padding: 4px 12px; background: var(--color-bg); border-radius: 100px;">Architecture</span>
             </div>
           </div>
         </div>
 
+        <!-- ===== メンバー 02: エンジニア ===== -->
         <div class="member fade-in">
-          <div class="member__photo">B</div>
+          <div class="member__photo">
+            <img src="assets/images/members/member-02.jpg"
+                 alt="◯◯ ◯◯"
+                 onerror="this.parentElement.classList.add('member__photo--placeholder'); this.parentElement.innerHTML='B';">
+          </div>
           <div>
             <h2 class="member__name">◯◯ ◯◯</h2>
             <p class="member__role">Software Engineer / Full-stack</p>
@@ -82,12 +94,17 @@
           </div>
         </div>
 
+        <!-- ===== メンバー 03: CS / マーケ ===== -->
         <div class="member fade-in">
-          <div class="member__photo">C</div>
+          <div class="member__photo">
+            <img src="assets/images/members/member-03.jpg"
+                 alt="◯◯ ◯◯"
+                 onerror="this.parentElement.classList.add('member__photo--placeholder'); this.parentElement.innerHTML='C';">
+          </div>
           <div>
             <h2 class="member__name">◯◯ ◯◯</h2>
             <p class="member__role">Customer Success / Marketing</p>
-            <p class="member__quote">「顧客の“言葉”を、プロダクトに翻訳する。」</p>
+            <p class="member__quote">「顧客の"言葉"を、プロダクトに翻訳する。」</p>
             <p style="color: var(--color-text-dim);">
               導入支援、CSオペレーション、コンテンツ制作を担当。
             </p>
@@ -98,6 +115,33 @@
             </div>
           </div>
         </div>
+
+        <!-- ===== メンバー 04: 新メンバー（2026年5月加入） ===== -->
+        <div class="member fade-in">
+          <div class="member__photo">
+            <img src="assets/images/members/member-04.jpg"
+                 alt="◯◯ ◯◯"
+                 onerror="this.parentElement.classList.add('member__photo--placeholder'); this.parentElement.innerHTML='D';">
+          </div>
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px; background: var(--color-accent-cyan); color: var(--color-bg); border-radius: 100px; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; margin-bottom: var(--space-sm); text-transform: uppercase; font-weight: 700;">
+              New / May 2026
+            </div>
+            <h2 class="member__name">◯◯ ◯◯</h2>
+            <p class="member__role">役職（職種を記入）</p>
+            <p class="member__quote">「ここに、信条や好きな言葉を。」</p>
+            <p style="color: var(--color-text-dim);">
+              ここに自己紹介文を記入してください。
+              担当領域、これまでのキャリア、Algorithm..を選んだ理由など。
+            </p>
+            <div style="margin-top: var(--space-sm); display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+              <span class="text-mono" style="padding: 4px 12px; background: var(--color-bg); border-radius: 100px;">Skill 1</span>
+              <span class="text-mono" style="padding: 4px 12px; background: var(--color-bg); border-radius: 100px;">Skill 2</span>
+              <span class="text-mono" style="padding: 4px 12px; background: var(--color-bg); border-radius: 100px;">Skill 3</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -112,7 +156,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__bottom">
-        <p>© 2026 AlgorithM Inc. All rights reserved.</p>
+        <p>© 2026 Algorithm.. Inc. All rights reserved.</p>
         <p class="status-indicator">All Systems Operational</p>
       </div>
     </div>
