@@ -4,84 +4,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - 株式会社Algorithm..</title>
-  <meta name="description" content="AlgorithMの製品アップデート、メンバー紹介、社内イベントなどをお届けします。">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/blog.css">
+  <title>Blog — 株式会社Algorithm..</title>
+  <meta name="description" content="株式会社Algorithm..の公式ブログ。AI、ひとり情シス、プロダクト開発、組織づくりについて発信します。">
+  <link rel="icon" href="assets/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
   <header class="header">
-  <div class="container header__inner">
-    <a href="index.html" class="logo">
-      <img src="assets/images/logo.png"
-           alt="Algorithm.."
-           class="logo__img"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
-      <span class="logo__text" style="display: none;">Algorithm<span>..</span></span>
-    </a>
-    <nav class="nav">
-      <a href="algodesk.html">Product</a>
-      <a href="company.html">Company</a>
-      <a href="members.html">Team</a>
-      <a href="blog.html">Blog</a>
-      <a href="careers.html">Careers</a>
-      <a href="contact.html" class="nav__cta">Contact →</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Menu">☰</button>
-  </div>
-</header>
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png"
+             alt="Algorithm.."
+             class="logo__img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+        <span class="logo__text" style="display: none;">Algorithm<span>..</span></span>
+      </a>
+      <nav class="nav">
+        <a href="algodesk.html">Product</a>
+        <a href="company.html">Company</a>
+        <a href="members.html">Team</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html" class="nav__cta">Contact →</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
 
-  <main class="blog-page">
-
-    <section class="blog-hero">
+  <main style="padding-top: 120px;">
+    <section class="section">
       <div class="container">
-        <p class="eyebrow">BLOG</p>
-        <h1 class="blog-hero-title">
-          Algorithm <span class="accent">Journal</span>
+        <p class="text-mono section-label">Blog</p>
+        <h1 class="section__heading fade-in">
+          私たちが、<br>
+          <span class="text-gradient">考えていること。</span>
         </h1>
-        <p class="blog-hero-sub">
-          プロダクトのアップデート、メンバーの素顔、社内の出来事を綴ります。
+        <p class="section__lead fade-in">
+          AI、ひとり情シス、プロダクト開発、組織づくり。<br>
+          私たちの日々の思考を、ここに残していきます。
         </p>
       </div>
     </section>
 
-    <section class="blog-filter">
+    <section class="section">
       <div class="container">
-        <div class="filter-group">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="product-update">Product Update</button>
-          <button class="filter-btn" data-filter="member">Member</button>
-          <button class="filter-btn" data-filter="event">Event</button>
-        </div>
-        <div class="tag-cloud" id="tag-cloud">
-          <!-- JSで動的生成 -->
+        <div class="grid grid--3 fade-in">
+
+          <article class="card">
+            <p class="text-mono" style="color: var(--color-accent-cyan); margin-bottom: var(--space-xs);">2026.05.20 / AI</p>
+            <h3 class="card__title">なぜ私たちは「ひとり情シス」に注目したのか</h3>
+            <p class="card__text">
+              全国の中小企業に約20万人いるとされる"ひとり情シス"。
+              その孤独と、AIで救える可能性について書きました。
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="text-mono" style="color: var(--color-accent-cyan); margin-bottom: var(--space-xs);">2026.05.15 / Tech</p>
+            <h3 class="card__title">AlgoDeskの技術スタックを公開します</h3>
+            <p class="card__text">
+              Next.js、Claude API、pgvector。
+              少人数で爆速開発するために選んだ技術と、その理由について。
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="text-mono" style="color: var(--color-accent-cyan); margin-bottom: var(--space-xs);">2026.05.10 / Culture</p>
+            <h3 class="card__title">4人目のメンバーを迎えました</h3>
+            <p class="card__text">
+              新しい仲間が加わり、私たちは4人になりました。
+              どんな想いで採用したのか、そして次に向けて。
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="text-mono" style="color: var(--color-accent-cyan); margin-bottom: var(--space-xs);">2026.05.01 / Product</p>
+            <h3 class="card__title">「美しいAI」とは何か</h3>
+            <p class="card__text">
+              機能だけではない、触れて気持ちのいいAIをつくる。
+              私たちが大切にしているデザイン哲学について。
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="text-mono" style="color: var(--color-accent-cyan); margin-bottom: var(--space-xs);">2026.04.20 / Founder</p>
+            <h3 class="card__title">創業の手紙</h3>
+            <p class="card__text">
+              なぜ会社をつくったのか。
+              代表 藤宮蓮による、創業時の想いを綴ったエッセイです。
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="text-mono" style="color: var(--color-accent-cyan); margin-bottom: var(--space-xs);">2026.04.04 / News</p>
+            <h3 class="card__title">株式会社Algorithm..を設立しました</h3>
+            <p class="card__text">
+              2026年4月4日、東京・池袋にて創業しました。
+              これから挑むことについて、簡単にご紹介します。
+            </p>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section class="blog-list-section">
-      <div class="container">
-        <div class="blog-grid" id="blog-grid">
-          <!-- JSで動的生成 -->
-        </div>
-        <div class="empty-state" id="empty-state" style="display:none;">
-          <p>該当する記事がありません。</p>
-        </div>
+    <section class="section" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(0, 229, 255, 0.05));">
+      <div class="container" style="text-align: center; max-width: 720px;">
+        <h2 class="section__heading fade-in">
+          更新情報を、<br>
+          <span class="text-gradient">受け取る。</span>
+        </h2>
+        <p class="section__lead fade-in" style="margin-left: auto; margin-right: auto;">
+          新着記事のお知らせをメールでお届けします。
+        </p>
+        <a href="contact.html" class="btn btn--primary fade-in">ニュースレター登録 →</a>
       </div>
     </section>
-
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 AlgorithM Inc.</p>
+      <div class="footer__bottom">
+        <p>© 2026 Algorithm.. Inc. All rights reserved.</p>
+        <p class="status-indicator">All Systems Operational</p>
+      </div>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/blog-list.js"></script>
 </body>
 </html>
