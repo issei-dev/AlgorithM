@@ -1404,3 +1404,300 @@ body.lightbox-open {
   .lightbox__next { right: 16px; }
   .lightbox__counter { top: 16px; left: 16px; }
 }
+/* File: assets/css/style.css （末尾に追記） */
+
+/* ============================================
+   Blog Post Article
+============================================ */
+.article {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.article__header {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.article__date {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-accent-cyan);
+  letter-spacing: 0.05em;
+}
+
+.article__category {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.article__title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: var(--space-md);
+  line-height: 1.3;
+}
+
+.article__lead {
+  font-size: 1.2rem;
+  color: var(--color-text-dim);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+}
+
+.article__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.article__author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent-violet), var(--color-accent-cyan));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  filter: grayscale(60%);
+  overflow: hidden;
+}
+
+.article__author-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.article__author-name {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.article__author-role {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  letter-spacing: 0.05em;
+}
+
+/* 本文タイポグラフィ */
+.article__body {
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+.article__body h2 {
+  font-size: 1.75rem;
+  margin: var(--space-lg) 0 var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.article__body h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.article__body h3 {
+  font-size: 1.3rem;
+  margin: var(--space-md) 0 var(--space-sm);
+  color: var(--color-accent-cyan);
+}
+
+.article__body p {
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.article__body strong {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.article__body em {
+  font-style: italic;
+  color: var(--color-text-dim);
+}
+
+.article__body blockquote {
+  margin: var(--space-md) 0;
+  padding: var(--space-md) var(--space-md);
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-accent-cyan);
+  border-radius: var(--radius-sm);
+  font-style: italic;
+  color: var(--color-text-dim);
+}
+
+.article__body ul,
+.article__body ol {
+  margin: var(--space-md) 0;
+  padding-left: var(--space-md);
+}
+
+.article__body li {
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-dim);
+}
+
+.article__body li::marker {
+  color: var(--color-accent-cyan);
+}
+
+.article__body code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--color-bg-alt);
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: var(--color-accent-cyan);
+}
+
+.article__body img {
+  margin: var(--space-md) 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.article__body hr {
+  margin: var(--space-lg) 0;
+  border: none;
+  border-top: 1px solid var(--color-border);
+}
+
+/* 記事フッター（次の記事ナビ・SNSシェア） */
+.article__footer {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.article__share {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+}
+
+.article__share-buttons {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.article__share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-text);
+  transition: all 0.3s var(--transition);
+  text-decoration: none;
+}
+
+.article__share-btn:hover {
+  background: var(--color-accent-cyan);
+  color: var(--color-bg);
+  border-color: var(--color-accent-cyan);
+  transform: scale(1.1);
+}
+
+/* 関連記事ナビ */
+.article__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.article__nav-link {
+  padding: var(--space-md);
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all 0.3s var(--transition);
+}
+
+.article__nav-link:hover {
+  border-color: var(--color-accent-cyan);
+  transform: translateY(-2px);
+}
+
+.article__nav-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+}
+
+.article__nav-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.article__nav-link--next {
+  text-align: right;
+}
+
+/* 戻るリンク */
+.article__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: var(--space-md);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+  transition: all 0.3s var(--transition);
+}
+
+.article__back:hover {
+  color: var(--color-accent-cyan);
+  transform: translateX(-4px);
+}
+
+@media (max-width: 768px) {
+  .article__title {
+    font-size: 1.75rem;
+  }
+
+  .article__nav {
+    grid-template-columns: 1fr;
+  }
+
+  .article__body {
+    font-size: 1rem;
+  }
+}
