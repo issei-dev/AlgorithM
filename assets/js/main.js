@@ -295,3 +295,76 @@ console.log('%cWe are hiring. → /careers.html', 'font-size: 14px; color: #7C3A
     }
   });
 })();
+// File: assets/js/main.js （末尾に追記）
+
+// ============================================
+// Feature Tabs
+// ============================================
+(() => {
+  const tabsNavs = document.querySelectorAll('.feature-tabs');
+  tabsNavs.forEach((tabs) => {
+    const buttons = tabs.querySelectorAll('.feature-tabs__tab');
+    const panels = tabs.querySelectorAll('.feature-tabs__panel');
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+
+        buttons.forEach((b) => b.classList.remove('is-active'));
+        panels.forEach((p) => p.classList.remove('is-active'));
+
+        btn.classList.add('is-active');
+        const targetPanel = tabs.querySelector(`[data-panel="${target}"]`);
+        if (targetPanel) targetPanel.classList.add('is-active');
+      });
+    });
+  });
+})();
+
+// ============================================
+// FAQ Accordion
+// ============================================
+(() => {
+  const faqItems = document.querySelectorAll('.faq__item');
+  faqItems.forEach((item) => {
+    const question = item.querySelector('.faq__question');
+    if (!question) return;
+
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('is-open');
+
+      // 他のFAQを閉じる（アコーディオン挙動）
+      faqItems.forEach((other) => other.classList.remove('is-open'));
+
+      // 自分を開閉
+      if (!isOpen) {
+        item.classList.add('is-open');
+      }
+    });
+  });
+})();
+
+// ============================================
+// Screen Tour Image Lightbox統合
+// ============================================
+(() => {
+  const tourImages = document.querySelectorAll('.screen-tour__image, .feature-tabs__image');
+  tourImages.forEach((img) => {
+    img.addEventListener('click', () => {
+      const imgEl = img.querySelector('img');
+      if (!imgEl || !imgEl.src) return;
+
+      // 既存のライトボックスを起動
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox) {
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        lightboxImage.src = imgEl.src;
+        lightboxImage.alt = imgEl.alt || '';
+        if (lightboxCaption) lightboxCaption.textContent = imgEl.alt || '';
+        lightbox.classList.add('is-active');
+        document.body.classList.add('lightbox-open');
+      }
+    });
+  });
+})();
