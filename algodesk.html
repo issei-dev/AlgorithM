@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AlgoDesk — ひとり情シスを、ひとりにしない。</title>
+  <title>AlgoDesk — ひとり情シスを、ひとりにしない。 | 株式会社Algorithm..</title>
+  <meta name="description" content="Slack/Teamsに常駐する、ひとり情シスのためのAIヘルプデスク。中小企業の情シス業務を、AIがそっと支える。">
+  <link rel="icon" href="assets/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -12,44 +14,62 @@
 </head>
 <body>
   <header class="header">
-  <div class="container header__inner">
-    <a href="index.html" class="logo">
-      <img src="assets/images/logo.png"
-           alt="Algorithm.."
-           class="logo__img"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
-      <span class="logo__text" style="display: none;">Algorithm<span>..</span></span>
-    </a>
-    <nav class="nav">
-      <a href="algodesk.html">Product</a>
-      <a href="company.html">Company</a>
-      <a href="members.html">Team</a>
-      <a href="blog.html">Blog</a>
-      <a href="careers.html">Careers</a>
-      <a href="contact.html" class="nav__cta">Contact →</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Menu">☰</button>
-  </div>
-</header>
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Algorithm.." class="logo__img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+        <span class="logo__text" style="display: none;">Algorithm<span>..</span></span>
+      </a>
+      <nav class="nav">
+        <a href="algodesk.html">Product</a>
+        <a href="company.html">Company</a>
+        <a href="members.html">Team</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html" class="nav__cta">Contact →</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
 
-  <main style="padding-top: 120px;">
-    <section class="section">
-      <div class="container" style="text-align: center;">
-        <p class="text-mono section-label" style="justify-content: center;">Product / AlgoDesk</p>
-        <h1 class="section__heading fade-in" style="font-size: clamp(2.5rem, 7vw, 5rem);">
-          ひとり情シスを、<br>
-          <span class="text-gradient">ひとりにしない。</span>
-        </h1>
-        <p class="section__lead fade-in" style="margin-left: auto; margin-right: auto;">
-          Slack/Teamsに常駐し、社員の問い合わせに3秒で回答するAIヘルプデスク。
-        </p>
-        <div class="hero__cta fade-in" style="justify-content: center; margin-top: var(--space-md);">
-          <a href="contact.html" class="btn btn--primary">14日間無料で試す →</a>
-          <a href="#pricing" class="btn btn--ghost">料金を見る</a>
+  <main style="padding-top: 80px;">
+
+    <!-- ============================================
+         01. Hero with Product Mockup
+    ============================================ -->
+    <section class="product-hero">
+      <div class="product-hero__bg"></div>
+      <div class="container">
+        <div class="product-hero__content">
+          <span class="coming-soon">Closed Beta / Coming Soon</span>
+          <p class="text-mono section-label" style="justify-content: center;">Product / AlgoDesk v1.0</p>
+          <h1 class="section__heading fade-in" style="font-size: clamp(2.5rem, 7vw, 5rem);">
+            ひとり情シスを、<br>
+            <span class="text-gradient">ひとりにしない。</span>
+          </h1>
+          <p class="section__lead fade-in" style="margin: 0 auto var(--space-md);">
+            Slack/Teamsに常駐し、社員の問い合わせに3秒で回答する<br>
+            ひとり情シスのための、AIヘルプデスク。
+          </p>
+          <div class="hero__cta fade-in" style="justify-content: center; margin-top: var(--space-md);">
+            <a href="contact.html" class="btn btn--primary">βアクセスを申し込む →</a>
+            <a href="#screen-tour" class="btn btn--ghost">画面を見る</a>
+          </div>
+        </div>
+
+        <div class="product-hero__mockup fade-in">
+          <div class="product-hero__mockup-frame">
+            <img src="assets/images/algodesk/hero-mockup.png"
+                 alt="AlgoDesk メイン画面"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'product-hero__mockup-placeholder\'>HERO MOCKUP / 16:10</div>';">
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ============================================
+         02. Pain Points
+    ============================================ -->
     <section class="section">
       <div class="container">
         <p class="text-mono section-label">Pain Points</p>
@@ -75,30 +95,389 @@
       </div>
     </section>
 
-    <section class="section" style="background: var(--color-bg-alt);">
+    <!-- ============================================
+         03. Screen Tour (画面ツアー)
+    ============================================ -->
+    <section class="section" id="screen-tour" style="background: var(--color-bg-alt);">
       <div class="container">
-        <p class="text-mono section-label">How It Works</p>
-        <h2 class="section__heading fade-in">3ステップで、解決。</h2>
-        <div class="grid grid--3 fade-in" style="margin-top: var(--space-lg);">
-          <div class="card">
-            <p class="text-mono" style="color: var(--color-accent-cyan);">STEP 01</p>
-            <h3 class="card__title" style="margin-top: var(--space-xs);">接続</h3>
-            <p class="card__text">Slack / Notion / Google Driveを連携。30分で導入完了。</p>
+        <p class="text-mono section-label">Product Tour</p>
+        <h2 class="section__heading fade-in">実際の画面で、<br>体験を見てください。</h2>
+        <p class="section__lead fade-in">
+          いつも使っているSlackやTeams上で、AlgoDeskが動きます。
+        </p>
+
+        <div style="margin-top: var(--space-xl);">
+
+          <!-- Screen 01: Slack内回答 -->
+          <div class="screen-tour fade-in">
+            <div class="screen-tour__text">
+              <p class="screen-tour__step">STEP 01 / Chat</p>
+              <h3 class="screen-tour__title">Slackで、即座に回答。</h3>
+              <p class="screen-tour__description">
+                社員はいつものSlackで質問するだけ。
+                AlgoDeskが3秒以内に、根拠付きで回答します。
+              </p>
+              <ul class="screen-tour__highlights">
+                <li>メンション不要、DM対応も可能</li>
+                <li>回答の出典ドキュメントをリンク付き表示</li>
+                <li>解決しない場合は情シスへ自動エスカレーション</li>
+              </ul>
+            </div>
+            <div class="screen-tour__image">
+              <img src="assets/images/algodesk/screen-01-slack.png"
+                   alt="Slack内でAlgoDeskが回答する画面"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'screen-tour__placeholder\'><span class=\'screen-tour__placeholder-icon\'>💬</span><span class=\'screen-tour__placeholder-label\'>SCREEN 01 / SLACK CHAT</span></div>';">
+            </div>
           </div>
-          <div class="card">
-            <p class="text-mono" style="color: var(--color-accent-cyan);">STEP 02</p>
-            <h3 class="card__title" style="margin-top: var(--space-xs);">学習</h3>
-            <p class="card__text">自社ナレッジをAIが自動で読み込み・構造化。</p>
+
+          <!-- Screen 02: Dashboard -->
+          <div class="screen-tour fade-in">
+            <div class="screen-tour__text">
+              <p class="screen-tour__step">STEP 02 / Dashboard</p>
+              <h3 class="screen-tour__title">運用状況を、ひと目で。</h3>
+              <p class="screen-tour__description">
+                管理画面では、今月の問い合わせ数・解決率・削減工数を可視化。
+                経営層への報告資料にもそのまま使えます。
+              </p>
+              <ul class="screen-tour__highlights">
+                <li>リアルタイムで処理状況を可視化</li>
+                <li>頻出質問トップ10を自動抽出</li>
+                <li>月次レポートをワンクリックでPDF出力</li>
+              </ul>
+            </div>
+            <div class="screen-tour__image">
+              <img src="assets/images/algodesk/screen-02-dashboard.png"
+                   alt="AlgoDesk 管理ダッシュボード"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'screen-tour__placeholder\'><span class=\'screen-tour__placeholder-icon\'>📊</span><span class=\'screen-tour__placeholder-label\'>SCREEN 02 / DASHBOARD</span></div>';">
+            </div>
           </div>
-          <div class="card">
-            <p class="text-mono" style="color: var(--color-accent-cyan);">STEP 03</p>
-            <h3 class="card__title" style="margin-top: var(--space-xs);">自動応答</h3>
-            <p class="card__text">社員からの質問に、出典付きで3秒以内に回答。</p>
+
+          <!-- Screen 03: Knowledge -->
+          <div class="screen-tour fade-in">
+            <div class="screen-tour__text">
+              <p class="screen-tour__step">STEP 03 / Knowledge</p>
+              <h3 class="screen-tour__title">ナレッジは、勝手に育つ。</h3>
+              <p class="screen-tour__description">
+                Notion、Google Drive、Confluence、SharePointを接続するだけ。
+                解決した会話は自動でFAQ化されます。
+              </p>
+              <ul class="screen-tour__highlights">
+                <li>5種類のドキュメントソースに対応</li>
+                <li>解決した質問を自動でFAQ候補化</li>
+                <li>古いドキュメントを自動検出してアラート</li>
+              </ul>
+            </div>
+            <div class="screen-tour__image">
+              <img src="assets/images/algodesk/screen-03-knowledge.png"
+                   alt="ナレッジ管理画面"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'screen-tour__placeholder\'><span class=\'screen-tour__placeholder-icon\'>📚</span><span class=\'screen-tour__placeholder-label\'>SCREEN 03 / KNOWLEDGE</span></div>';">
+            </div>
+          </div>
+
+          <!-- Screen 04: Analytics -->
+          <div class="screen-tour fade-in">
+            <div class="screen-tour__text">
+              <p class="screen-tour__step">STEP 04 / Analytics</p>
+              <h3 class="screen-tour__title">削減効果を、数字で語る。</h3>
+              <p class="screen-tour__description">
+                「今月◯件対応、◯時間削減、¥◯相当」を自動レポート。
+                経営層への説明が、これ一枚で完結します。
+              </p>
+              <ul class="screen-tour__highlights">
+                <li>工数削減を金額換算して可視化</li>
+                <li>質問トレンドの変化を時系列で分析</li>
+                <li>未解決質問の傾向から、改善点を抽出</li>
+              </ul>
+            </div>
+            <div class="screen-tour__image">
+              <img src="assets/images/algodesk/screen-04-analytics.png"
+                   alt="分析レポート画面"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'screen-tour__placeholder\'><span class=\'screen-tour__placeholder-icon\'>📈</span><span class=\'screen-tour__placeholder-label\'>SCREEN 04 / ANALYTICS</span></div>';">
+            </div>
+          </div>
+
+          <!-- Screen 05: Settings -->
+          <div class="screen-tour fade-in">
+            <div class="screen-tour__text">
+              <p class="screen-tour__step">STEP 05 / Settings</p>
+              <h3 class="screen-tour__title">セットアップは、30分。</h3>
+              <p class="screen-tour__description">
+                Slack/Teams連携、ドキュメント接続、SSO設定、
+                すべてGUI上で完結。情シス担当者ひとりで導入できます。
+              </p>
+              <ul class="screen-tour__highlights">
+                <li>マニュアル不要のセットアップウィザード</li>
+                <li>SAML/OIDC対応のSSO設定</li>
+                <li>IP制限・監査ログ・データ非学習設定も標準装備</li>
+              </ul>
+            </div>
+            <div class="screen-tour__image">
+              <img src="assets/images/algodesk/screen-05-settings.png"
+                   alt="設定画面"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'screen-tour__placeholder\'><span class=\'screen-tour__placeholder-icon\'>⚙️</span><span class=\'screen-tour__placeholder-label\'>SCREEN 05 / SETTINGS</span></div>';">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         04. Feature Tabs (機能詳細)
+    ============================================ -->
+    <section class="section">
+      <div class="container">
+        <p class="text-mono section-label">Features</p>
+        <h2 class="section__heading fade-in">機能のすべて。</h2>
+        <p class="section__lead fade-in">
+          AlgoDeskは「答えるAI」を超えて、「動くAI」を目指します。
+        </p>
+
+        <div class="feature-tabs fade-in" style="margin-top: var(--space-lg);">
+          <div class="feature-tabs__nav">
+            <button class="feature-tabs__tab is-active" data-tab="chat">Chat</button>
+            <button class="feature-tabs__tab" data-tab="knowledge">Knowledge</button>
+            <button class="feature-tabs__tab" data-tab="workflow">Workflow</button>
+            <button class="feature-tabs__tab" data-tab="analytics">Analytics</button>
+            <button class="feature-tabs__tab" data-tab="security">Security</button>
+          </div>
+
+          <!-- Chat -->
+          <div class="feature-tabs__panel is-active" data-panel="chat">
+            <div class="feature-tabs__image">
+              <img src="assets/images/algodesk/feature-chat.png"
+                   alt="チャット機能"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'feature-tabs__placeholder\'>FEATURE / CHAT</div>';">
+            </div>
+            <div class="feature-tabs__content">
+              <h3>問い合わせ対応</h3>
+              <p>社員からの質問を24時間365日、即座に処理。一次対応の8割をAIが完結させます。</p>
+              <ul class="feature-tabs__feature-list">
+                <li>Slack / Microsoft Teams 連携</li>
+                <li>メール一次対応＆下書き自動生成</li>
+                <li>Webチャットウィジェット（社内ポータル埋め込み）</li>
+                <li>画像認識（スクリーンショット添付対応）</li>
+                <li>日英中韓越 5言語対応</li>
+                <li>自動エスカレーション（要約付き）</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Knowledge -->
+          <div class="feature-tabs__panel" data-panel="knowledge">
+            <div class="feature-tabs__image">
+              <img src="assets/images/algodesk/feature-knowledge.png"
+                   alt="ナレッジ管理機能"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'feature-tabs__placeholder\'>FEATURE / KNOWLEDGE</div>';">
+            </div>
+            <div class="feature-tabs__content">
+              <h3>ナレッジ管理</h3>
+              <p>散在する社内ドキュメントを横断検索し、出典付きで回答します。</p>
+              <ul class="feature-tabs__feature-list">
+                <li>Notion / Google Drive / Confluence / SharePoint 連携</li>
+                <li>解決した会話を自動でFAQ化</li>
+                <li>回答の根拠ドキュメントをリンク表示</li>
+                <li>古いドキュメントの自動検出＆アラート</li>
+                <li>部署・役職に応じた権限ベース検索</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Workflow -->
+          <div class="feature-tabs__panel" data-panel="workflow">
+            <div class="feature-tabs__image">
+              <img src="assets/images/algodesk/feature-workflow.png"
+                   alt="ワークフロー機能"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'feature-tabs__placeholder\'>FEATURE / WORKFLOW</div>';">
+            </div>
+            <div class="feature-tabs__content">
+              <h3>情シス定型業務テンプレート</h3>
+              <p>情シスの「あるある業務」をテンプレート化。チェックリスト・進捗管理まで自動。</p>
+              <ul class="feature-tabs__feature-list">
+                <li>入社時オンボーディング自動化</li>
+                <li>退職者棚卸チェックリスト</li>
+                <li>SaaS棚卸ダッシュボード</li>
+                <li>PCキッティング対話ガイド</li>
+                <li>インシデントポストモーテム自動生成</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Analytics -->
+          <div class="feature-tabs__panel" data-panel="analytics">
+            <div class="feature-tabs__image">
+              <img src="assets/images/algodesk/feature-analytics.png"
+                   alt="分析機能"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'feature-tabs__placeholder\'>FEATURE / ANALYTICS</div>';">
+            </div>
+            <div class="feature-tabs__content">
+              <h3>分析・レポート</h3>
+              <p>削減効果を金額換算。経営層向けの説明資料が、自動で完成します。</p>
+              <ul class="feature-tabs__feature-list">
+                <li>月次工数削減レポート（PDF出力）</li>
+                <li>頻出質問・増加質問・未解決質問の可視化</li>
+                <li>ROIシミュレーター</li>
+                <li>カスタムレポート出力（CSV/PDF）</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Security -->
+          <div class="feature-tabs__panel" data-panel="security">
+            <div class="feature-tabs__image">
+              <img src="assets/images/algodesk/feature-security.png"
+                   alt="セキュリティ機能"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'feature-tabs__placeholder\'>FEATURE / SECURITY</div>';">
+            </div>
+            <div class="feature-tabs__content">
+              <h3>セキュリティ・統制</h3>
+              <p>情シス向け製品だからこそ、セキュリティは最優先。妥協のない設計です。</p>
+              <ul class="feature-tabs__feature-list">
+                <li>SSO（SAML/OIDC）対応</li>
+                <li>監査ログ（全API・全質問記録）</li>
+                <li>データ非学習保証（契約条項に明記）</li>
+                <li>東京リージョン国内データ保管</li>
+                <li>IP制限・デバイス制限</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ============================================
+         05. Use Cases
+    ============================================ -->
+    <section class="section" style="background: var(--color-bg-alt);">
+      <div class="container">
+        <p class="text-mono section-label">Use Cases</p>
+        <h2 class="section__heading fade-in">こんな場面で、使われます。</h2>
+        <p class="section__lead fade-in">
+          情シスの「あるある業務」を、AlgoDeskが代行します。
+        </p>
+
+        <div class="usecase-grid fade-in" style="margin-top: var(--space-lg);">
+
+          <div class="usecase">
+            <div class="usecase__image">
+              <img src="assets/images/algodesk/usecase-01-onboarding.png"
+                   alt="入社時オンボーディング"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'usecase__placeholder\'>USECASE 01</div>';">
+            </div>
+            <div class="usecase__content">
+              <p class="usecase__category">入社対応</p>
+              <h3 class="usecase__title">入社初日のオンボーディング</h3>
+              <p class="usecase__description">
+                Google Workspaceアカウント発行、PCキッティング、必須SaaS招待、
+                セキュリティ研修を、AlgoDeskが新入社員と1on1で完了させます。
+              </p>
+              <div class="usecase__stat">
+                <span class="usecase__stat-value">90%</span>
+                <span class="usecase__stat-label">情シス工数削減</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="usecase">
+            <div class="usecase__image">
+              <img src="assets/images/algodesk/usecase-02-offboarding.png"
+                   alt="退職者処理"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'usecase__placeholder\'>USECASE 02</div>';">
+            </div>
+            <div class="usecase__content">
+              <p class="usecase__category">退職対応</p>
+              <h3 class="usecase__title">退職者の棚卸チェック</h3>
+              <p class="usecase__description">
+                全SaaSアカウントの停止、端末回収、データ移管。
+                チェック漏れゼロをAIが保証し、セキュリティリスクを根絶します。
+              </p>
+              <div class="usecase__stat">
+                <span class="usecase__stat-value">0件</span>
+                <span class="usecase__stat-label">チェック漏れ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="usecase">
+            <div class="usecase__image">
+              <img src="assets/images/algodesk/usecase-03-saas-audit.png"
+                   alt="SaaS棚卸"
+                   onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'usecase__placeholder\'>USECASE 03</div>';">
+            </div>
+            <div class="usecase__content">
+              <p class="usecase__category">コスト最適化</p>
+              <h3 class="usecase__title">SaaS棚卸とコスト削減</h3>
+              <p class="usecase__description">
+                未使用ライセンスの自動検出、契約更新アラート、
+                重複SaaSの統合提案。年間平均¥120万のコスト削減実績。
+              </p>
+              <div class="usecase__stat">
+                <span class="usecase__stat-value">¥120万</span>
+                <span class="usecase__stat-label">平均年間削減額</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         06. Demo Video
+    ============================================ -->
+    <section class="section">
+      <div class="container">
+        <p class="text-mono section-label">Demo</p>
+        <h2 class="section__heading fade-in" style="text-align: center;">3分で、わかる。</h2>
+        <p class="section__lead fade-in" style="text-align: center; margin-left: auto; margin-right: auto;">
+          AlgoDeskの全機能を、3分間のデモ動画でご紹介します。
+        </p>
+
+        <div class="demo-video fade-in" style="margin-top: var(--space-lg);">
+          <div class="demo-video__placeholder">
+            <div class="demo-video__play-button">▶</div>
+            <span class="demo-video__label">DEMO VIDEO / 3:00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         07. Impact Stats
+    ============================================ -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(0, 229, 255, 0.04));">
+      <div class="container">
+        <p class="text-mono section-label">Impact</p>
+        <h2 class="section__heading fade-in">数字で見る、AlgoDeskの効果。</h2>
+
+        <div class="stats-comparison fade-in">
+          <div class="stat-card">
+            <div class="stat-card__value">3秒</div>
+            <div class="stat-card__label">平均応答時間</div>
+            <div class="stat-card__sublabel">Avg. Response</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value">82%</div>
+            <div class="stat-card__label">一次解決率</div>
+            <div class="stat-card__sublabel">First Contact Resolution</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value">60h</div>
+            <div class="stat-card__label">月間削減工数</div>
+            <div class="stat-card__sublabel">Monthly Saved Hours</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value">24/7</div>
+            <div class="stat-card__label">稼働時間</div>
+            <div class="stat-card__sublabel">Always On</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         08. Pricing
+    ============================================ -->
     <section class="section" id="pricing">
       <div class="container">
         <p class="text-mono section-label">Pricing</p>
@@ -161,21 +540,150 @@
       </div>
     </section>
 
-    <section class="section" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(0, 229, 255, 0.05));">
-      <div class="container" style="text-align: center;">
-        <h2 class="section__heading fade-in">14日間、無料で試せます。</h2>
-        <p class="section__lead fade-in" style="margin-left: auto; margin-right: auto;">
-          クレジットカード不要。30分の設定で、すぐ動きます。
-        </p>
-        <a href="contact.html" class="btn btn--primary fade-in">無料トライアルを開始 →</a>
+    <!-- ============================================
+         09. Security
+    ============================================ -->
+    <section class="section" style="background: var(--color-bg-alt);">
+      <div class="container">
+        <p class="text-mono section-label">Security</p>
+        <h2 class="section__heading fade-in">情シス向け製品だから、<br>セキュリティを妥協しません。</h2>
+
+        <div class="security-grid fade-in" style="margin-top: var(--space-lg);">
+          <div class="security-badge">
+            <div class="security-badge__icon">🔒</div>
+            <h3 class="security-badge__title">データ非学習</h3>
+            <p class="security-badge__description">顧客データはLLMの学習に使用しません</p>
+          </div>
+          <div class="security-badge">
+            <div class="security-badge__icon">🇯🇵</div>
+            <h3 class="security-badge__title">国内データ保管</h3>
+            <p class="security-badge__description">東京リージョンでの保管オプション</p>
+          </div>
+          <div class="security-badge">
+            <div class="security-badge__icon">🔑</div>
+            <h3 class="security-badge__title">SSO対応</h3>
+            <p class="security-badge__description">SAML / OIDC / Entra ID / Okta</p>
+          </div>
+          <div class="security-badge">
+            <div class="security-badge__icon">📜</div>
+            <h3 class="security-badge__title">完全な監査ログ</h3>
+            <p class="security-badge__description">全API呼び出しを記録・保管</p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- ============================================
+         10. FAQ
+    ============================================ -->
+    <section class="section">
+      <div class="container">
+        <p class="text-mono section-label">FAQ</p>
+        <h2 class="section__heading fade-in" style="text-align: center;">よくあるご質問</h2>
+
+        <div class="faq fade-in" style="margin-top: var(--space-lg);">
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>導入までにどれくらいかかりますか？</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-content">
+                最短30分で稼働開始できます。SlackまたはTeamsと、Notion等のドキュメントソースを連携いただくだけで利用開始可能です。SSOやIP制限などの追加設定をされる場合でも、当日中に運用開始できる設計になっています。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>顧客データは学習に使われますか？</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-content">
+                いいえ、一切使用しません。AlgoDeskでは、顧客企業の社内ドキュメント、Q&A履歴、設定情報など、すべてのデータをLLMの学習に使用しないことを契約書に明記しています。データは顧客企業のテナント内に閉じて保持されます。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>無料トライアルはありますか？</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-content">
+                14日間の無料トライアルをご用意しています。クレジットカードの登録は不要で、すべての機能をお試しいただけます。ご希望の方は、お問い合わせフォームよりご連絡ください。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>既存のチャットボットから乗り換えできますか？</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-content">
+                可能です。既存のFAQやドキュメントを取り込むことで、初日から高い回答精度を実現できます。乗り換え支援は専任のカスタマーサクセスが対応いたしますので、お気軽にご相談ください。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>解約はいつでもできますか？</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-content">
+                月額プランの場合、いつでも解約可能です。解約後も翌月末まではご利用いただけます。年額プランの場合は契約期間満了時の解約となりますが、その分17%の割引が適用されます。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>オンプレミス版はありますか？</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-content">
+                現在はSaaS版のみのご提供となります。エンタープライズプランをご検討中で、専用環境が必要な企業さまには、シングルテナント構成での提供をご相談可能です。詳しくはお問い合わせください。
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         11. Final CTA
+    ============================================ -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(0, 229, 255, 0.05));">
+      <div class="container" style="text-align: center;">
+        <h2 class="section__heading fade-in">
+          まず、画面を見てみませんか。
+        </h2>
+        <p class="section__lead fade-in" style="margin-left: auto; margin-right: auto;">
+          15分のオンラインデモで、AlgoDeskを実際に動かしながらご説明します。<br>
+          営業色なし、その場で疑問にお答えする時間です。
+        </p>
+        <div class="hero__cta fade-in" style="justify-content: center; margin-top: var(--space-md);">
+          <a href="contact.html" class="btn btn--primary">デモを予約する →</a>
+          <a href="contact.html" class="btn btn--ghost">資料をダウンロード</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
     <div class="container">
       <div class="footer__bottom">
-        <p>© 2026 AlgorithM Inc. All rights reserved.</p>
+        <p>© 2026 Algorithm.. Inc. All rights reserved.</p>
         <p class="status-indicator">All Systems Operational</p>
       </div>
     </div>
