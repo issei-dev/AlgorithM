@@ -1,3 +1,4 @@
+<!-- Output: html -->
 <!-- File: algodesk.html -->
 <!DOCTYPE html>
 <html lang="ja">
@@ -20,7 +21,7 @@
              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
         <span class="logo__text" style="display: none;">Algorithm<span>..</span></span>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="main-nav">
         <a href="algodesk.html">Product</a>
         <a href="company.html">Company</a>
         <a href="members.html">Team</a>
@@ -28,7 +29,7 @@
         <a href="careers.html">Careers</a>
         <a href="contact.html" class="nav__cta">Contact →</a>
       </nav>
-      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="main-nav">☰</button>
     </div>
   </header>
 
@@ -48,7 +49,7 @@
             <span class="text-gradient">ひとりにしない。</span>
           </h1>
           <p class="section__lead fade-in" style="margin: 0 auto var(--space-md);">
-            Slack/Teamsに常駐し、社員の問い合わせに3秒で回答する<br>
+            Slackに常駐し、社員の問い合わせに3秒で回答する<br>
             ひとり情シスのための、AIヘルプデスク。
           </p>
           <div class="hero__cta fade-in" style="justify-content: center; margin-top: var(--space-md);">
@@ -61,7 +62,7 @@
           <div class="product-hero__mockup-frame">
             <img src="assets/images/algodesk/hero-mockup.png"
                  alt="AlgoDesk メイン画面"
-                 onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'product-hero__mockup-placeholder\'>HERO MOCKUP / 16:10</div>';">
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'product-hero__mockup-placeholder\'>HERO MOCKUP / 3:2</div>';">
           </div>
         </div>
       </div>
@@ -103,7 +104,7 @@
         <p class="text-mono section-label">Product Tour</p>
         <h2 class="section__heading fade-in">実際の画面で、<br>体験を見てください。</h2>
         <p class="section__lead fade-in">
-          いつも使っているSlackやTeams上で、AlgoDeskが動きます。
+          いつも使っているSlack上で、AlgoDeskが動きます。
         </p>
 
         <div style="margin-top: var(--space-xl);">
@@ -158,11 +159,11 @@
               <p class="screen-tour__step">STEP 03 / Knowledge</p>
               <h3 class="screen-tour__title">ナレッジは、勝手に育つ。</h3>
               <p class="screen-tour__description">
-                Notion、Google Drive、Confluence、SharePointを接続するだけ。
+                Notion、Google Driveを接続するだけ。
                 解決した会話は自動でFAQ化されます。
               </p>
               <ul class="screen-tour__highlights">
-                <li>5種類のドキュメントソースに対応</li>
+                <li>主要ドキュメントソースに対応</li>
                 <li>解決した質問を自動でFAQ候補化</li>
                 <li>古いドキュメントを自動検出してアラート</li>
               </ul>
@@ -202,7 +203,7 @@
               <p class="screen-tour__step">STEP 05 / Settings</p>
               <h3 class="screen-tour__title">セットアップは、30分。</h3>
               <p class="screen-tour__description">
-                Slack/Teams連携、ドキュメント接続、SSO設定、
+                Slack連携、ドキュメント接続、SSO設定、
                 すべてGUI上で完結。情シス担当者ひとりで導入できます。
               </p>
               <ul class="screen-tour__highlights">
@@ -253,12 +254,12 @@
               <h3>問い合わせ対応</h3>
               <p>社員からの質問を24時間365日、即座に処理。一次対応の8割をAIが完結させます。</p>
               <ul class="feature-tabs__feature-list">
-                <li>Slack / Microsoft Teams 連携</li>
-                <li>メール一次対応＆下書き自動生成</li>
-                <li>Webチャットウィジェット（社内ポータル埋め込み）</li>
+                <li>Slack 連携（V1.0）</li>
+                <li>LINE WORKS / Microsoft Teams 連携（V2.0）</li>
                 <li>画像認識（スクリーンショット添付対応）</li>
-                <li>日英中韓越 5言語対応</li>
                 <li>自動エスカレーション（要約付き）</li>
+                <li>メール一次対応＆下書き自動生成</li>
+                <li>多言語対応（将来対応）</li>
               </ul>
             </div>
           </div>
@@ -274,7 +275,8 @@
               <h3>ナレッジ管理</h3>
               <p>散在する社内ドキュメントを横断検索し、出典付きで回答します。</p>
               <ul class="feature-tabs__feature-list">
-                <li>Notion / Google Drive / Confluence / SharePoint 連携</li>
+                <li>Notion / Google Drive 連携（V1.0）</li>
+                <li>Confluence / SharePoint 連携（V2.0）</li>
                 <li>解決した会話を自動でFAQ化</li>
                 <li>回答の根拠ドキュメントをリンク表示</li>
                 <li>古いドキュメントの自動検出＆アラート</li>
@@ -423,9 +425,120 @@
     </section>
 
     <!-- ============================================
-         06. Demo Video
+         06. Roadmap (新規追加)
     ============================================ -->
-    <section class="section">
+    <section class="section" id="roadmap">
+      <div class="container">
+        <p class="text-mono section-label">Roadmap</p>
+        <h2 class="section__heading fade-in">AlgoDeskは、<br>進化していきます。</h2>
+        <p class="section__lead fade-in">
+          「ひとり情シス」から「バックオフィス全体」へ。<br>
+          4つのバージョンを通じて、社内横断AIプラットフォームへ成長します。
+        </p>
+
+        <div class="roadmap fade-in">
+          <div class="roadmap__timeline"></div>
+
+          <!-- V1.0 -->
+          <div class="roadmap__item roadmap__item--current">
+            <div class="roadmap__card">
+              <span class="roadmap__status roadmap__status--current">● Now Building</span>
+              <p class="roadmap__version">Version 1.0</p>
+              <p class="roadmap__period">2026 Q2 - Q3</p>
+              <h3 class="roadmap__title">Slack連携でサービス開始</h3>
+              <p class="roadmap__tagline">
+                ひとり情シスを、ひとりにしない。<br>
+                Slack常駐ボットで、情シス業務のPMFを確立します。
+              </p>
+              <ul class="roadmap__features">
+                <li class="roadmap__feature-tag">Slack</li>
+                <li class="roadmap__feature-tag">Notion / Drive</li>
+                <li class="roadmap__feature-tag">画像認識</li>
+                <li class="roadmap__feature-tag">月次レポート</li>
+                <li class="roadmap__feature-tag">SSO</li>
+              </ul>
+            </div>
+            <div class="roadmap__node"></div>
+            <div class="roadmap__spacer"></div>
+          </div>
+
+          <!-- V2.0 -->
+          <div class="roadmap__item roadmap__item--future">
+            <div class="roadmap__spacer"></div>
+            <div class="roadmap__node"></div>
+            <div class="roadmap__card">
+              <span class="roadmap__status roadmap__status--next">▲ Next</span>
+              <p class="roadmap__version">Version 2.0</p>
+              <p class="roadmap__period">2026 Q4 - 2027 Q1</p>
+              <h3 class="roadmap__title">LINE WORKS / Teams 連携</h3>
+              <p class="roadmap__tagline">
+                使っているチャットで、情シスがいる。<br>
+                国内主要チャネルに対応し、市場を一気に拡大します。
+              </p>
+              <ul class="roadmap__features">
+                <li class="roadmap__feature-tag">LINE WORKS</li>
+                <li class="roadmap__feature-tag">Microsoft Teams</li>
+                <li class="roadmap__feature-tag">チャネル横断</li>
+                <li class="roadmap__feature-tag">国内データ保管</li>
+                <li class="roadmap__feature-tag">Confluence</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- V3.0 -->
+          <div class="roadmap__item roadmap__item--future">
+            <div class="roadmap__card">
+              <span class="roadmap__status roadmap__status--future">○ Planned</span>
+              <p class="roadmap__version">Version 3.0</p>
+              <p class="roadmap__period">2027 Q2 - Q3</p>
+              <h3 class="roadmap__title">総務部Bot機能を追加</h3>
+              <p class="roadmap__tagline">
+                ひとり総務も、ひとり情シスも、ひとりにしない。<br>
+                「情シス」から「バックオフィス」へ、領域を拡張します。
+              </p>
+              <ul class="roadmap__features">
+                <li class="roadmap__feature-tag">総務Bot</li>
+                <li class="roadmap__feature-tag">福利厚生Q&A</li>
+                <li class="roadmap__feature-tag">社内規定検索</li>
+                <li class="roadmap__feature-tag">勤怠連携</li>
+                <li class="roadmap__feature-tag">HRIS連携</li>
+              </ul>
+            </div>
+            <div class="roadmap__node"></div>
+            <div class="roadmap__spacer"></div>
+          </div>
+
+          <!-- V4.0 -->
+          <div class="roadmap__item roadmap__item--future">
+            <div class="roadmap__spacer"></div>
+            <div class="roadmap__node"></div>
+            <div class="roadmap__card">
+              <span class="roadmap__status roadmap__status--future">○ Planned</span>
+              <p class="roadmap__version">Version 4.0</p>
+              <p class="roadmap__period">2027 Q4 - 2028 Q2</p>
+              <h3 class="roadmap__title">法務部Bot機能を追加</h3>
+              <p class="roadmap__tagline">
+                会社の神経系。すべてのバックオフィスに、AIを。<br>
+                バックオフィスAIプラットフォームとして完成します。
+              </p>
+              <ul class="roadmap__features">
+                <li class="roadmap__feature-tag">法務Bot</li>
+                <li class="roadmap__feature-tag">契約書レビュー</li>
+                <li class="roadmap__feature-tag">NDA即時チェック</li>
+                <li class="roadmap__feature-tag">雛形提案</li>
+                <li class="roadmap__feature-tag">法改正アラート</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         07. Demo Video
+    ============================================ -->
+    <section class="section" style="background: var(--color-bg-alt);">
       <div class="container">
         <p class="text-mono section-label">Demo</p>
         <h2 class="section__heading fade-in" style="text-align: center;">3分で、わかる。</h2>
@@ -443,7 +556,7 @@
     </section>
 
     <!-- ============================================
-         07. Impact Stats
+         08. Impact Stats
     ============================================ -->
     <section class="section" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(0, 229, 255, 0.04));">
       <div class="container">
@@ -476,7 +589,7 @@
     </section>
 
     <!-- ============================================
-         08. Pricing
+         09. Pricing
     ============================================ -->
     <section class="section" id="pricing">
       <div class="container">
@@ -492,7 +605,7 @@
             <p class="pricing-card__price">¥9,800<span>/月</span></p>
             <p class="pricing-card__target">〜30名規模</p>
             <ul class="pricing-card__features">
-              <li>Slack または Teams 連携</li>
+              <li>Slack 連携</li>
               <li>月間質問数 500件</li>
               <li>ナレッジソース 1つ</li>
               <li>簡易月次レポート</li>
@@ -507,10 +620,9 @@
             <p class="pricing-card__price">¥29,800<span>/月</span></p>
             <p class="pricing-card__target">〜100名規模</p>
             <ul class="pricing-card__features">
-              <li>Slack ＋ Teams 両方連携</li>
+              <li>Slack 連携</li>
               <li>月間質問数 3,000件</li>
               <li>ナレッジソース 3つ</li>
-              <li>メール・Webチャット対応</li>
               <li>画像認識Q&A</li>
               <li>入社・退職オンボーディング</li>
               <li>SSO対応</li>
@@ -527,7 +639,6 @@
               <li>全機能搭載</li>
               <li>月間質問数 無制限</li>
               <li>ナレッジソース 無制限</li>
-              <li>多言語対応（5言語）</li>
               <li>SaaS棚卸ダッシュボード</li>
               <li>権限ベース検索</li>
               <li>国内データ保管</li>
@@ -541,7 +652,7 @@
     </section>
 
     <!-- ============================================
-         09. Security
+         10. Security
     ============================================ -->
     <section class="section" style="background: var(--color-bg-alt);">
       <div class="container">
@@ -574,7 +685,7 @@
     </section>
 
     <!-- ============================================
-         10. FAQ
+         11. FAQ
     ============================================ -->
     <section class="section">
       <div class="container">
@@ -590,7 +701,31 @@
             </button>
             <div class="faq__answer">
               <div class="faq__answer-content">
-                最短30分で稼働開始できます。SlackまたはTeamsと、Notion等のドキュメントソースを連携いただくだけで利用開始可能です。SSOやIP制限などの追加設定をされる場合でも、当日中に運用開始できる設計になっています。
+                最短30分で稼働開始できます。SlackとNotion等のドキュメントソースを連携いただくだけで利用開始可能です。SSOやIP制限などの追加設定をされる場合でも、当日中に運用開始できる設計になっています。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>Slack以外のチャットツールには対応していますか？</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-content">
+                V1.0ではSlackのみ対応しています。V2.0（2026年Q4〜2027年Q1）にて、LINE WORKSおよびMicrosoft Teamsへの対応を予定しています。ご利用予定のツールがある場合は、お問い合わせフォームよりご連絡ください。優先度の判断材料にさせていただきます。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>総務や法務の業務にも使えますか？</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-content">
+                V3.0（2027年Q2〜Q3）で総務部門向けBot機能を、V4.0（2027年Q4〜2028年Q2）で法務部門向けBot機能を追加予定です。社内規定検索、契約書レビュー、NDAチェックなど、バックオフィス全体をカバーする横断AIプラットフォームへ進化します。
               </div>
             </div>
           </div>
@@ -660,7 +795,7 @@
     </section>
 
     <!-- ============================================
-         11. Final CTA
+         12. Final CTA
     ============================================ -->
     <section class="section" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(0, 229, 255, 0.05));">
       <div class="container" style="text-align: center;">
